@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contacts</title>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link href='css/font-awesome.min.css' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Asap:400italic,400,700italic,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rd-mailform-2.css">
+  <link rel="stylesheet" href="css/google-map.css">
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.2.1.js"></script> 
+
+  <!--[if lt IE 9]> 
+  <html class="lt-ie9">
+  <div style=' clear: both; text-align:center; position: relative;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+      <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+    </a>
+  </div>
+  <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <script src='js/device.min.js'></script>
+</head>
+<body>
+<div class="page">
+  <!--========================================================
+                            HEADER
+  =========================================================-->
+  <header>
+    <!-- Stuck Container -->
+    <div id="stuck_container" class="stuck_container">
+      <div class="container">
+        <!-- Brand -->
+        <div class="brand">
+          <img src="images/logo.png" alt="">
+          <a href="./" class="brand_name">Be smart</a>
+        </div>
+        <!-- END Brand -->
+
+        <!-- Menu  -->
+        <nav class="nav">
+          <ul class="sf-menu" data-type="navbar">
+            <li><a href='./'>Home</a></li>
+            <li><a href='index-1.html'>About</a>
+              <ul>
+                <li><a href="#">Aliquam cong</a>
+                  <ul>
+                    <li><a href="#">Sed in lacus</a></li>
+                    <li><a href="#">Enim adipisci</a></li>
+                    <li><a href="#">Aliquam cong</a></li>
+                    <li><a href="#">Fermentum</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Fermentum</a></li>
+                <li><a href="#">Mauris accu</a></li>
+                <li><a href="#">Nulla vel dia</a></li>
+              </ul>
+            </li>
+            <li><a href='index-2.html'>Blog</a></li>
+            <li><a href='index-3.html'>Gallery</a></li>
+            <li class="active"><a href='index-4.html'>Contacts</a></li>
+          </ul>
+        </nav>
+        <!-- END Menu -->
+      </div>
+    </div>
+    <!-- END Stuck Container -->
+  </header>
+  <!--========================================================
+                            CONTENT
+  =========================================================-->
+  <main>
+    <section class="well-md">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="row offset-2 flow-offset-2">
+          
+          <div class="col-md-4">
+            <!-- Contact Info -->
+            <address class="contact-info offset-4">
+            <div class="heading-4">8901 MARMORA ROAD,<br>GLASGOW, D04 89GR.</div>
+              <dl><dt>Freephone:</dt><dd><a href="callto:#">+1 800 559 6580</a></dd></dl>
+              <dl><dt>Telephone:</dt><dd><a href="callto:#">+1 800 603 6035</a></dd></dl>
+              <dl><dt>FAX:</dt><dd><a href="callto:#">+1 800 889 9898</a></dd></dl>
+              <dl><dt>E-mail:</dt><dd><a href="mailto:#"> mail@demolink.org</a></dd></dl>
+            </address>
+            <!-- END Contact Info -->
+          </div>
+
+          <div class="col-md-8">
+            <!-- RD-Mailform -->
+            <form class="rd-mailform offset-3" method="post" action="bat/rd-mailform.php">
+              <input type="hidden" name="form-type" value="contact"/>
+              <fieldset>
+
+                <label data-add-placeholder="">
+                    <input type="text"
+                    name="name"
+                    placeholder="Name*:"
+                    data-constraints="@NotEmpty @LettersOnly"/>
+                </label>
+
+                <label data-add-placeholder="">
+                    <input type="text"
+                    name="email"
+                    placeholder="E-mail*:"
+                    data-constraints="@NotEmpty @Email"/>
+                </label>
+
+                <label data-add-placeholder="">
+                    <input type="text"
+                    name="phone"
+                    placeholder="Telephone:"
+                    data-constraints="@Phone"/>
+                </label>
+
+                <label data-add-placeholder="" class="textarea">
+                  <textarea
+                  name="message"
+                  placeholder="Your message"
+                  data-constraints="@NotEmpty"></textarea>
+                </label>
+
+                <div class="mfControls">
+                    <button class="btn btn-secondary btn-md" type="submit">Submit</button><span>*required fields</span>
+                </div>
+
+                <div class="mfInfo"></div>
+
+              </fieldset>
+            </form>
+            <!-- END RD-Mailform -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Map -->
+    <section class="map map-mod">
+      <div id="google-map" class="map_model" data-y="40.721114" data-x="-73.884811"></div>
+      <ul class="map_locations">
+        <li data-y="40.721255" data-x="-73.884664">
+          <p> 9870 St Vincent Place, Glasgow, DC 45 Fr 45. <span>800 2345-6789</span></p>
+        </li>
+      </ul>
+    </section>
+    <!-- END Google Map -->
+
+  </main>
+  <!--========================================================
+                            FOOTER
+  =========================================================-->
+  <footer class="text-center">
+    <div class="container">
+      <a href="./">Be smart</a>
+       &copy; <span id="copyright-year">2015</span> All Rights Reserved |
+      <a href="index-5.html">Privacy Policy</a>
+    </div>
+  </footer>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
