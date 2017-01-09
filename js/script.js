@@ -67,7 +67,7 @@ include('js/jquery.easing.1.3.js');
     if (o.length > 0) {
         include('js/jquery.equalheights.js');
     }
-})(jQuery); 
+})(jQuery);
 
 /* Copyright Year
  ========================================================*/
@@ -136,7 +136,7 @@ include('js/jquery.easing.1.3.js');
 ;(function ($) {
     var o = $('.rd-mailform');
     if (o.length > 0) {
-        include('js/mailform/jquery.form.min.js'); 
+        include('js/mailform/jquery.form.min.js');
         include('js/mailform/jquery.rd-mailform.min.js');
 
         $(document).ready(function () {
@@ -287,13 +287,21 @@ var o = $('#camera');
 /* TouchTouch Gallery
 ========================================================*/
 ;(function ($) {
-    var o = $('.thumb');
+    var o = $('.anotherThumb');
+    include('js/jquery.touch-touch.js');
     if (o.length > 0) {
-        include('js/jquery.touch-touch.js');
         $(document).ready(function () {
             o.touchTouch();
-        }); 
-    } 
+        });
+    }
+
+    var p = $('.customThumb');
+    if(p.length > 0 ){
+      $(document).ready(function(){
+        p.touchTouch();
+      });
+    }
+
 })(jQuery);
 
 /* Isotope
@@ -317,6 +325,6 @@ var o = $('#camera');
                 $('.tabs .active').removeClass('active');
                 $(this).addClass('active');
             });
-        }); 
-    } 
+        });
+    }
 })(jQuery);
